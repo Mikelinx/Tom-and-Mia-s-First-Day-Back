@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom and Mia — Demo</title>
+</head>
+<body>
+  <h1>¡Funciona GitHub Pages!</h1>
+  <p><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom and Mia’s First Day Back — To be & Have/Has (A1)</title>
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121821; --text:#e7edf6; --muted:#b9c7d9;
+      --accent:#58a6ff; --good:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    .wrap{max-width:860px;margin:0 auto;padding:20px}
+    h1,h2,h3{line-height:1.2}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:16px 18px;margin:14px 0;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .badge{display:inline-block;font-size:.8rem;padding:4px 8px;border-radius:999px;background:#1f2937;color:var(--muted);margin-left:8px}
+    .story p{margin:.4rem 0}
+    .grid{display:grid;gap:12px}
+    @media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+    button{background:var(--accent);color:#00122a;border:none;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+    button.secondary{background:#1f2937;color:var(--text);}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .note{color:var(--muted);font-size:.95rem}
+    .hl{background:#0f1f33;border-left:4px solid var(--accent);padding:10px;border-radius:10px}
+    .q{margin:.6rem 0}
+    input[type="text"], select{
+      width:100%;padding:10px 12px;border-radius:10px;border:1px solid #2a3646;background:#0c121a;color:var(--text);
+    }
+    .inline-input{width:auto;min-width:90px;display:inline-block}
+    .answer{font-weight:700}
+    .ok{outline:2px solid var(--good)}
+    .err{outline:2px solid var(--bad)}
+    .hidden{display:none}
+    .small{font-size:.9rem;color:var(--muted)}
+    .footer{margin:24px 0;color:var(--muted);font-size:.9rem;text-align:center}
+    .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;font-size:.8rem;margin-right:6px}
+    .table{width:100%;border-collapse:separate;border-spacing:0 8px}
+    .table td{background:#0c121a;border:1px solid #1f2937;padding:8px 10px}
+    .table td:first-child{border-right:none;border-top-left-radius:10px;border-bottom-left-radius:10px}
+    .table td:last-child{border-left:none;border-top-right-radius:10px;border-bottom-right-radius:10px}
+    .kbd{background:#111827;border:1px solid #374151;padding:2px 6px;border-radius:6px;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Tom and Mia’s First Day Back <span class="badge">A1 • to be &amp; have/has</span></h1>
+    <div class="card hl">
+      <p class="note"><b>Tip (ES):</b> Lee la historia en voz alta. Luego completa los ejercicios. <b>Offline-friendly.</b></p>
+      <p class="small">US English • Designed for phone or PC • Works without Internet</p>
+    </div>
+
+    <div class="card story">
+      <h2>Story</h2>
+      <p>It <b>is</b> Monday morning. Tom <b>is</b> 11 years old, and he <b>is</b> excited. He <b>has</b> a new blue backpack. His sister, Mia, <b>is</b> 8. She <b>is</b> a little nervous, but she <b>has</b> a big smile.</p>
+      <p>“Good morning, Tom! How <b>are</b> you?” says Mom. “I’<b>m</b> fine, Mom. I <b>have</b> my pencils and my notebook,” Tom says. Mia says, “I <b>have</b> water and a snack. I’<b>m</b> ready.”</p>
+      <p>At school, the hallway <b>is</b> busy. The teacher <b>is</b> friendly and <b>has</b> a class list. “Hi! I’<b>m</b> Ms. Carter. <b>Are</b> you Tom and Mia?” “Yes, we <b>are</b>,” they say.</p>
+      <p>In the classroom, Tom <b>has</b> two pencils, but he <b>doesn’t have</b> an eraser. He <b>is</b> a little worried. Mia <b>is</b> kind. She <b>has</b> an extra eraser. “Here you go,” she says. Tom <b>is</b> happy now.</p>
+      <p>During break, their new friend Leo <b>is</b> shy. He <b>has</b> a small soccer ball. “Do you <b>have</b> time to play?” he asks. “Sure! We <b>are</b> free,” Tom says.</p>
+      <p>At the end of the day, everyone <b>is</b> tired but happy. They <b>have</b> new friends and a good story to tell at home.</p>
+    </div>
+
+    <div class="card">
+      <h2>1) Comprehension Check</h2>
+      <div class="grid grid-2">
+        <div class="q">
+          <label>1) What color is Tom’s backpack?</label>
+          <input type="text" id="q1" placeholder="Type a short answer..." />
+        </div>
+        <div class="q">
+          <label>2) Is Mia nervous or excited?</label>
+          <select id="q2">
+            <option value="">Select…</option>
+            <option>Nervous</option>
+            <option>Excited</option>
+          </select>
+        </div>
+        <div class="q">
+          <label>3) Who has the class list?</label>
+          <input type="text" id="q3" placeholder="Type a short answer..." />
+        </div>
+        <div class="q">
+          <label>4) What item doesn’t Tom have?</label>
+          <input type="text" id="q4" placeholder="Type a short answer..." />
+        </div>
+        <div class="q">
+          <label>5) At the end, how are they?</label>
+          <input type="text" id="q5" placeholder="Type a short answer..." />
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="checkComp()">Check</button>
+        <button class="secondary" onclick="resetComp()">Reset</button>
+      </div>
+      <p id="compScore" class="note"></p>
+    </div>
+
+    <div class="card">
+      <h2>2) Form Focus: Fill the gaps</h2>
+      <p class="small">Use: <span class="pill">am</span><span class="pill">is</span><span class="pill">are</span><span class="pill">have</span><span class="pill">has</span><span class="pill">isn’t</span><span class="pill">aren’t</span><span class="pill">don’t have</span><span class="pill">doesn’t have</span></p>
+      <ol>
+        <li>Mia <input class="inline-input" id="f1a" type="text" placeholder="____"> friendly and she <input class="inline-input" id="f1b" type="text" placeholder="____"> a big smile.</li>
+        <li>Tom <input class="inline-input" id="f2a" type="text" placeholder="____"> two pencils, but he <input class="inline-input" id="f2b" type="text" placeholder="____"> an eraser.</li>
+        <li>The hallway <input class="inline-input" id="f3" type="text" placeholder="____"> busy on Monday.</li>
+        <li>“<input class="inline-input" id="f4a" type="text" placeholder="____"> you Tom and Mia?” “Yes, we <input class="inline-input" id="f4b" type="text" placeholder="____">.”</li>
+        <li>I <input class="inline-input" id="f5a" type="text" placeholder="____"> ready, but I <input class="inline-input" id="f5b" type="text" placeholder="____"> my notebook.</li>
+      </ol>
+      <div class="controls">
+        <button onclick="checkFill()">Check</button>
+        <button class="secondary" onclick="resetFill()">Reset</button>
+        <button class="secondary" onclick="toggleFillKey()">Show/Hide Key</button>
+      </div>
+      <div id="fillKey" class="note hidden">Key: 1) <span class="answer">is / has</span> • 2) <span class="answer">has / doesn’t have</span> • 3) <span class="answer">is</span> • 4) <span class="answer">Are / are</span> • 5) <span class="answer">am / don’t have</span></div>
+    </div>
+
+    <div class="card">
+      <h2>3) Mini‑Dialog (Order the lines)</h2>
+      <p class="small">Drag to reorder from 1 → 4.</p>
+      <table class="table" id="dragList">
+        <tbody>
+          <tr draggable="true"><td>“It’s okay. I have an extra. Here you go!”</td><td class="small">A</td></tr>
+          <tr draggable="true"><td>“No, I don’t have one. I am worried.”</td><td class="small">B</td></tr>
+          <tr draggable="true"><td>“Hi, Mia! How are you today?”</td><td class="small">C</td></tr>
+          <tr draggable="true"><td>“I’m fine. I have my water. Do you have an eraser?”</td><td class="small">D</td></tr>
+        </tbody>
+      </table>
+      <div class="controls">
+        <button onclick="checkOrder()">Check</button>
+        <button class="secondary" onclick="resetOrder()">Reset</button>
+      </div>
+      <p id="orderMsg" class="note"></p>
+    </div>
+
+    <div class="card">
+      <h2>4) Yes/No + Short Answers</h2>
+      <div class="grid grid-2">
+        <div class="q">
+          <label>1) Is Ms. Carter the teacher?</label>
+          <select id="yn1">
+            <option value="">Select…</option>
+            <option>Yes, she is.</option>
+            <option>No, she isn’t.</option>
+          </select>
+        </div>
+        <div class="q">
+          <label>2) Do Tom and Mia have new friends?</label>
+          <select id="yn2">
+            <option value="">Select…</option>
+            <option>Yes, they do.</option>
+            <option>No, they don’t.</option>
+          </select>
+        </div>
+        <div class="q">
+          <label>3) Does Tom have an eraser at first?</label>
+          <select id="yn3">
+            <option value="">Select…</option>
+            <option>Yes, he does.</option>
+            <option>No, he doesn’t.</option>
+          </select>
+        </div>
+        <div class="q">
+          <label>4) Are they tired at the end?</label>
+          <select id="yn4">
+            <option value="">Select…</option>
+            <option>Yes, they are.</option>
+            <option>No, they aren’t.</option>
+          </select>
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="checkYN()">Check</button>
+        <button class="secondary" onclick="resetYN()">Reset</button>
+      </div>
+      <p id="ynMsg" class="note"></p>
+    </div>
+
+    <div class="card">
+      <h2>Teacher Notes (ES)</h2>
+      <ul>
+        <li>Objetivo (can-do): comprender y usar <b>to be</b> y <b>have/has</b> en oraciones simples (A1).</li>
+        <li>Pronunciación US: contracciones comunes (<span class="kbd">I’m</span>, <span class="kbd">it’s</span>, <span class="kbd">don’t</span>, <span class="kbd">doesn’t</span>).</li>
+        <li>Diferenciación: Papá guía lectura; Hija completa primero; luego cambian roles.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>© For classroom use • Made for A1 learners • <span class="small">You can print this page (A4) or use it on a phone.</span></p>
+    </div>
+  </div>
+
+<script>
+  // Helpers
+  const norm = s => (s||"").trim().toLowerCase().replace(/[.?!]/g,"");
+  const setState = (el, ok) => {
+    el.classList.remove("ok","err");
+    if(ok===true) el.classList.add("ok");
+    if(ok===false) el.classList.add("err");
+  };
+
+  // 1) Comprehension
+  function checkComp(){
+    const a1 = ["blue"];
+    const a2 = "nervous";
+    const a3 = ["the teacher","teacher","ms carter","ms. carter"];
+    const a4 = ["an eraser","eraser"];
+    const a5 = ["tired but happy","happy and tired","happy","tired and happy"];
+
+    let score = 0, total = 5;
+
+    const el1 = document.getElementById("q1");
+    const ok1 = a1.includes(norm(el1.value));
+    setState(el1, ok1); if(ok1) score++;
+
+    const el2 = document.getElementById("q2");
+    const ok2 = norm(el2.value)===a2; setState(el2, ok2); if(ok2) score++;
+
+    const el3 = document.getElementById("q3");
+    const ok3 = a3.includes(norm(el3.value)); setState(el3, ok3); if(ok3) score++;
+
+    const el4 = document.getElementById("q4");
+    const ok4 = a4.includes(norm(el4.value)); setState(el4, ok4); if(ok4) score++;
+
+    const el5 = document.getElementById("q5");
+    const ok5 = a5.includes(norm(el5.value)); setState(el5, ok5); if(ok5) score++;
+
+    const msg = document.getElementById("compScore");
+    msg.textContent = `Score: ${score}/${total}`;
+    msg.style.color = score===total ? "var(--good)" : (score>=3 ? "var(--warn)" : "var(--bad)");
+  }
+  function resetComp(){
+    ["q1","q2","q3","q4","q5"].forEach(id=>{
+      const el = document.getElementById(id);
+      if(el.tagName==="SELECT") el.selectedIndex = 0; else el.value="";
+      setState(el, null);
+    });
+    document.getElementById("compScore").textContent="";
+  }
+
+  // 2) Fill
+  const fillKey = {
+    f1a:"is", f1b:"has",
+    f2a:"has", f2b:"doesn’t have",
+    f3:"is",
+    f4a:"Are", f4b:"are",
+    f5a:"am", f5b:"don’t have"
+  };
+  function checkFill(){
+    let okAll = true;
+    Object.entries(fillKey).forEach(([id,ans])=>{
+      const el = document.getElementById(id);
+      const val = el.value.trim();
+      const correct = norm(val)===norm(ans);
+      setState(el, correct);
+      if(!correct) okAll=false;
+    });
+  }
+  function resetFill(){
+    Object.keys(fillKey).forEach(id=>{
+      const el = document.getElementById(id); el.value=""; setState(el, null);
+    });
+    document.getElementById("fillKey").classList.add("hidden");
+  }
+  function toggleFillKey(){
+    document.getElementById("fillKey").classList.toggle("hidden");
+  }
+
+  // 3) Drag order
+  const correctOrder = ["C","D","B","A"]; // labels in second cell
+  let dragSrc;
+  const tbody = document.querySelector("#dragList tbody");
+  tbody.addEventListener("dragstart", e=>{
+    if(e.target.tagName==="TR"){ dragSrc = e.target; e.dataTransfer.effectAllowed="move"; }
+  });
+  tbody.addEventListener("dragover", e=>{ e.preventDefault(); e.dataTransfer.dropEffect="move"; });
+  tbody.addEventListener("drop", e=>{
+    e.preventDefault();
+    const row = e.target.closest("tr");
+    if(row && row!==dragSrc){
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+      const srcIndex = rows.indexOf(dragSrc);
+      const destIndex = rows.indexOf(row);
+      if(srcIndex < destIndex) tbody.insertBefore(dragSrc, row.nextSibling);
+      else tbody.insertBefore(dragSrc, row);
+    }
+  });
+  function getCurrentOrder(){
+    return Array.from(tbody.querySelectorAll("tr")).map(tr=>tr.cells[1].textContent.trim());
+  }
+  function checkOrder(){
+    const cur = getCurrentOrder();
+    const ok = JSON.stringify(cur)===JSON.stringify(correctOrder);
+    document.getElementById("orderMsg").textContent = ok ? "Perfect order! ✅" : "Try again. Hint: Start with a greeting.";
+    document.getElementById("orderMsg").style.color = ok ? "var(--good)" : "var(--warn)";
+  }
+  function resetOrder(){
+    // reset to original order A,B,C,D -> we want C,D,B,A initial we used A,B,C,D; We'll re-set to the initial we coded
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    rows.sort((a,b)=>a.cells[1].textContent.localeCompare(b.cells[1].textContent));
+    rows.forEach(r=>tbody.appendChild(r));
+    document.getElementById("orderMsg").textContent="";
+  }
+
+  // 4) Yes/No
+  function checkYN(){
+    const keys = {yn1:"Yes, she is.", yn2:"Yes, they do.", yn3:"No, he doesn’t.", yn4:"Yes, they are."};
+    let score=0, total=4;
+    Object.entries(keys).forEach(([id,ans])=>{
+      const el = document.getElementById(id);
+      const ok = el.value===ans;
+      setState(el, ok);
+      if(ok) score++;
+    });
+    const msg = document.getElementById("ynMsg");
+    msg.textContent = `Score: ${score}/${total}`;
+    msg.style.color = score===total ? "var(--good)" : (score>=3 ? "var(--warn)" : "var(--bad)");
+  }
+  function resetYN(){
+    ["yn1","yn2","yn3","yn4"].forEach(id=>{
+      const el = document.getElementById(id); el.selectedIndex=0; setState(el, null);
+    });
+    document.getElementById("ynMsg").textContent="";
+  }
+</script>
+</body>
+</html>.</p>
+  <!-- Incluye tus scripts y assets con rutas relativas, ejemplo: -->
+  <!-- <script src="./js/game.js"></script> -->
+</body>
+</html>
